@@ -1,0 +1,38 @@
+@import "./root";
+
+.headgroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-md);
+    font-weight: 700;
+
+    * {
+        font-weight: 700;
+    }
+
+    &__label {
+        font-size: var(--size-xs);
+
+        &::before {
+            content: "[ ";
+        }
+
+        &::after {
+            content: " ]";
+        }
+
+        font-weight: 700;
+
+        * {
+            font-weight: 700;
+        }
+    }
+
+    &__headline {
+        font-size: var(--size-md);
+
+        @media (min-width: $sm) {
+            font-size: var(--size-md);
+        }
+    }
+}

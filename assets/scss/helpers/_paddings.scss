@@ -1,0 +1,34 @@
+.padding {
+    &-top-sm {
+        padding-top: var(--size-sm);
+    }
+
+    &-top-md {
+        padding-top: var(--size-md);
+    }
+
+    &-top-lg {
+        padding-top: var(--size-lg);
+    }
+
+    &-top-xl {
+        padding-top: var(--size-xl);
+    }
+
+    &-bottom-sm {
+        padding-bottom: var(--size-sm);
+    }
+
+    &-bottom-md {
+        padding-bottom: var(--size-md);
+    }
+
+    &-bottom-lg {
+        padding-bottom: var(--size-lg);
+    }
+
+    &-bottom-xl {
+        padding-bottom: var(--size-xl);
+    }
+
+}

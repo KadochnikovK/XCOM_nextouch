@@ -1,0 +1,43 @@
+// брейкпоинты
+$xl: 1300px;
+$md: 920px;
+$regular: 768px;
+$sm: 640px;
+$xs: 320px;
+
+:root {
+    --color-main: #000;
+    --color-second: #000;
+    --color-regular: #343434;
+    --color-grey: #9d9d9d;
+    --color-grey-light: #efefef;
+    --color-white: #fff;
+
+    --gradient-main: linear-gradient(102.9deg, #000000 18.27%, #B43B88 125.6%);
+
+
+    --size-base: calc(min(100vh, 100vw) * 0.01 + max(100vh, 100vw) * 0.008);
+
+    --size-xxxxs: max(calc(var(--size-base) * 0.2), 4px);
+    --size-xxxs: max(calc(var(--size-base) * 0.4), 8px);
+    --size-xxs: max(calc(var(--size-base) * 0.6), 12px);
+    --size-xs: max(calc(var(--size-base) * 0.8), 16px);
+    --size-sm: max(calc(var(--size-base) * 1), 20px);
+    --size-md: max(calc(var(--size-base) * 1.2), 24px);
+    --size-lg: max(calc(var(--size-base) * 1.5), 30px);
+    --size-xl: max(calc(var(--size-base) * 2), 40px);
+    --size-xxl: max(calc(var(--size-base) * 2.5), 50px);
+    --size-xxxl: max(calc(var(--size-base) * 5), 100px);
+
+    --radius-lg: 24px;
+    --radius-sm: 8px;
+
+    --lh-xl: 1.6;
+    --lh-lg: 1.4;
+    --lh-md: 1.2;
+
+    --max-size: 1360px;
+
+    --border-h-lg: 4px;
+    --border-h-md: 2px;
+}

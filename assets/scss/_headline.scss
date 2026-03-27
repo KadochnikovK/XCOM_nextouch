@@ -1,0 +1,22 @@
+.headline {
+    font-size: var(--size-xl);
+    font-weight: 500;
+    color: var(--color-main);
+    position: relative;
+    line-height: 1.2;
+
+
+    &--size-sm {
+        margin-bottom: 30px;
+    }
+
+    &--light {
+        color: var(--color-white)
+    }
+
+    &--center::after {
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

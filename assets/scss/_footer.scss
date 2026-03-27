@@ -1,0 +1,29 @@
+@import "./root";
+
+.footer {
+    background: var(--gradient-main);
+
+    &__content {
+        display: grid;
+        gap: var(--size-md);
+        color: var(--color-white);
+        grid-template-columns: 0.7fr 2fr;
+        grid-auto-rows: max-content;
+    }
+
+    &__item {
+        grid-column: span 2;
+    }
+
+    &__logo-img {
+        display: block;
+    }
+
+    @media (min-width: $sm) {
+        margin-top: var(--size-xl);
+
+        &__item {
+            grid-column: span 1;
+        }
+    }
+}

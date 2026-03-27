@@ -1,0 +1,46 @@
+.offer {
+    height: 100vh;
+    background: var(--gradient-main);
+    min-height: 600px;
+
+    font-weight: 700;
+
+    * {
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &__headline {
+        font-size: calc(var(--size-xxxl) * 0.7);
+    }
+
+    &__content {
+        color: var(--color-white);
+        gap: var(--size-md);
+        justify-content: center;
+        height: 100%;
+        // position: absolute;
+        text-align: center;
+
+        @include lg {
+            text-align: left;
+        }
+
+        &.active {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__text {
+        font-size: var(--size-md);
+    }
+
+    &__button {
+        margin-inline: auto;
+
+        @include lg {
+            margin-inline: 0;
+        }
+    }
+}

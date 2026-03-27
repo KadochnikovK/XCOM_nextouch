@@ -1,0 +1,71 @@
+.speakers {
+    // background: var(--color-second);
+
+    &__slider {
+        overflow: visible;
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-sm);
+        z-index: 100;
+
+        @include md {
+            flex-direction: row;
+            gap: var(--size-xl);
+        }
+    }
+
+    * {
+        color: var(--color-white);
+    }
+
+    &__content {
+        gap: var(--size-xxxs);
+        position: relative;
+    }
+
+    &__arrow {
+        position: absolute;
+        max-width: 10vw;
+        width: 100%;
+        min-width: 50px;
+        right: 0;
+        top: 0;
+        transform: rotate(-90deg) translateY(-30%) translateX(20%);
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__text {
+        font-size: var(--size-xs);
+        font-weight: 600;
+    }
+
+    &__image {
+        // max-width: 400px;
+        width: 100%;
+        max-height: 500px;
+
+        // margin-top: auto;
+        background: rgba(255, 255, 255, 0.2);
+
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        will-change: backdrop-filter;
+
+        
+
+        border-radius: 5pc;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        object-fit: contain;
+
+        @include md {
+            width: 40%;
+        }
+    }
+}

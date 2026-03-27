@@ -1,0 +1,27 @@
+@import "./root";
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-xxs);
+
+    &--center {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--mobile {
+        flex-direction: column;
+        gap: var(--size-md);
+
+        @media (min-width: $sm) {
+            flex-direction: row;
+            gap: var(--size-md);
+        }
+
+    }
+
+    &--column {
+        flex-direction: column;
+    }
+}
