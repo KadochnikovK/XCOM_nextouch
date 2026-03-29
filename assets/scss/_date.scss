@@ -1,23 +1,48 @@
 @import "./root";
 
 .date {
+    margin-top: var(--size-xl);
     display: flex;
-    font-size: var(--size-sm);
+    font-size: var(--size-xs);
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--size-sm);
 
     @include lg {
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
     }
+
+    // @include lg {
+    //     justify-content: space-between;
+    //     align-items: end;
+    // }
 
     &__item {
         padding: 0 var(--size-xs);
 
-        &:nth-child(1) {
-            padding-left: 0;
+        text-align: left;
+        font-weight: 400 !important;
+
+        @include lg {
+            max-width: max(25%, 370px);
         }
 
-        &:not(:last-child) {
-            border-right: 1px solid var(--color-white);
+    }
+
+    &__headline {
+        font-size: var(--size-md);
+        display: block;
+        padding-bottom: var(--size-sm);
+        position: relative;
+
+        &::after {
+            content: url(images/line.svg);
+            position: absolute;
+            bottom: 5px;
+            left: 0;
         }
     }
 

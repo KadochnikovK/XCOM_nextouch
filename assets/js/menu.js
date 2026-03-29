@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".header__hamburger");
 const menu = document.querySelector(".header__menu");
-const offerContent = document.querySelector(".offer__content");
+const offerContent = document.querySelector(".date");
 
 
 menu.style.transition = 'opacity 0.3s ease, visibility 0.3s ease';

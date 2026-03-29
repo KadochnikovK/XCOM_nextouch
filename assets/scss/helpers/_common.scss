@@ -172,3 +172,10 @@ a {
         }
     }
 }
+
+.second-font {
+    display: inline-block;
+    font-family: 'Second';
+    font-weight: 500 !important;
+    transform: translateY(-2%);
+}

@@ -79,3 +79,13 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Second';
+    src: url('fonts/DotGothic16-Regular.ttf') format('truetype'),
+        url('fonts/DotGothic16-Regular.woff') format('woff'),
+        url('fonts/DotGothic16-Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

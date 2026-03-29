@@ -2,36 +2,34 @@ function createGrid() {
     const slider = document.querySelector('.speakers');
     if (!slider) return;
 
-    // Удаляем существующую сетку
     const existingGrid = slider.querySelector('.grid-overlay');
     if (existingGrid) {
         existingGrid.remove();
     }
 
-    // Получаем размеры блока и его позицию относительно документа
+
     const sliderRect = slider.getBoundingClientRect();
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    
-    // Абсолютные координаты блока относительно документа
+
+
     const absoluteTop = sliderRect.top + scrollTop;
     const absoluteBottom = sliderRect.bottom + scrollTop;
     const absoluteLeft = sliderRect.left + scrollLeft;
     const absoluteRight = sliderRect.right + scrollLeft;
-    
-    // Границы для рисования от левого края окна до правого
-    // Но в абсолютных координатах
+
+
     const startX = scrollLeft;
     const endX = scrollLeft + window.innerWidth;
     const startY = absoluteTop;
     const endY = absoluteBottom;
-    
+
     const width = endX - startX;
     const height = endY - startY;
 
-    // Высота ячейки = высота блока / 3
+
     const cellHeight = height / 3;
-    // Ширина ячейки = высоте ячейки (квадратные клетки)
+
     const cellWidth = cellHeight;
 
     // Создаем canvas
@@ -45,30 +43,29 @@ function createGrid() {
     canvas.style.pointerEvents = 'none';
     canvas.className = 'grid-overlay';
 
-    // Устанавливаем реальные размеры canvas
+
     const dpr = window.devicePixelRatio || 1;
     canvas.width = slider.offsetWidth * dpr;
     canvas.height = slider.offsetHeight * dpr;
 
     const ctx = canvas.getContext('2d');
     ctx.scale(dpr, dpr);
-    
-    // Очищаем canvas
+
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
+
     ctx.beginPath();
     ctx.strokeStyle = '#3F3F3F';
     ctx.lineWidth = 1;
 
-    // Рисуем вертикальные линии
-    // Рассчитываем смещение для рисования относительно canvas
+
     const offsetX = absoluteLeft - scrollLeft;
     const offsetY = absoluteTop - scrollTop;
-    
-    // Определяем количество колонок от левого края окна до правого
+
+
     const startCol = Math.floor(scrollLeft / cellWidth);
     const endCol = Math.ceil((scrollLeft + window.innerWidth) / cellWidth);
-    
+
     for (let i = startCol; i <= endCol; i++) {
         const x = (i * cellWidth) - scrollLeft - offsetX;
         if (x >= 0 && x <= canvas.width) {
@@ -96,11 +93,11 @@ function createGrid() {
             ctx.stroke();
         }
     }
-    
+console.log('canvas.height', canvas.height)
     // Нижняя граница
     ctx.beginPath();
-    ctx.moveTo(0, canvas.height);
-    ctx.lineTo(canvas.width, canvas.height);
+    ctx.moveTo(0, height);
+    ctx.lineTo(canvas.width, height);
     ctx.stroke();
 
     slider.style.position = 'relative';

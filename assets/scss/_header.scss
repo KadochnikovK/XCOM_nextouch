@@ -40,7 +40,7 @@
 
     &__menu {
         position: absolute;
-        margin-left: auto;
+        // margin-left: auto;
         left: 0;
         width: 100%;
         display: none;
@@ -50,20 +50,21 @@
         z-index: 8;
         visibility: hidden;
 
+
         &.active {
             display: flex;
-            counter-reset: link-counter;
-            top: 50vh;
+            // counter-reset: link-counter;
+            top: 70vh;
             transform: translateY(-20vh);
 
             .header__link {
                 font-size: var(--size-md);
-                counter-increment: link-counter;
+                // counter-increment: link-counter;
 
-                &::before {
-                    content: "0" counter(link-counter) ". ";
-                    margin-right: 0.5em;
-                }
+                // &::before {
+                //     content: "0" counter(link-counter) ". ";
+                //     margin-right: 0.5em;
+                // }
             }
         }
     }
@@ -71,16 +72,16 @@
     &__link {
         font-size: var(--size-md);
         color: var(--color-white);
-        text-align: left;
-        display: flex;
-        align-items: center;
+
+
         transition: all 0.2s ease;
         padding: 1rem 1.5rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         text-shadow: 0 0 0 rgba(87, 132, 230, 0);
+        text-align: center;
 
         &:hover {
-            color: rgba(255, 255, 255, .8);
+            color: #7B7B7B;
 
             // color: var(--color-main);
             text-shadow:
@@ -90,6 +91,12 @@
 
         &:last-child {
             border-bottom: none;
+        }
+
+        @include lg {
+            text-align: left;
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -113,7 +120,7 @@
     &__button {
         font-size: var(--size-xs);
         transition: transform 0.2s ease;
-       
+
 
         &:hover {
             transform: scale(1.05);

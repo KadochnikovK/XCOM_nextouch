@@ -26,19 +26,7 @@
         position: relative;
     }
 
-    &__arrow {
-        position: absolute;
-        max-width: 10vw;
-        width: 100%;
-        min-width: 50px;
-        right: 0;
-        top: 0;
-        transform: rotate(-90deg) translateY(-30%) translateX(20%);
-
-        @media (min-width: 1024px) {
-            display: none;
-        }
-    }
+    
 
     &__text {
         font-size: var(--size-xs);
@@ -53,8 +41,8 @@
         // margin-top: auto;
         background: rgba(255, 255, 255, 0.2);
 
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
         will-change: backdrop-filter;
 
         
