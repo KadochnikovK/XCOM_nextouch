@@ -156,6 +156,10 @@ a {
 .before-lg {
     display: flex !important;
 
+    &--inline {
+        display: inline !important;
+    }
+
     @include lg {
         display: none !important;
     }

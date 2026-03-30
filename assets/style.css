@@ -259,6 +259,9 @@ a {
 .before-lg {
   display: flex !important;
 }
+.before-lg--inline {
+  display: inline !important;
+}
 @media (min-width: 1224px) {
   .before-lg {
     display: none !important;
@@ -880,7 +883,6 @@ summary {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   text-shadow: 0 0 0 rgba(87, 132, 230, 0);
   text-align: center !important;
-  display: inline !important;
 }
 .header__link:hover {
   color: #7B7B7B;
