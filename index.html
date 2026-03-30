@@ -1,249 +1,237 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper.css" />
+    <link rel="stylesheet" href="./assets/scss/animations/animations.css" />
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
 
-  <link rel="stylesheet" href="./assets/plugins/swiper/swiper.css" />
-  <link rel="stylesheet" href="./assets/scss/animations/animations.css" />
-  <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
-  <link rel="stylesheet" href="./assets/style.css" />
+    <link type="Image/x-icon" href="./assets/images/favicon.png" rel="icon" />
 
-  <link type="Image/x-icon" href="./assets/images/favicon.png" rel="icon" />
+    <script src="./assets/plugins/swiper/swiper.js"></script>
 
-  <script src="./assets/plugins/swiper/swiper.js"></script>
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/modal.js" defer></script>
 
-  <script src="./assets/js/menu.js" defer></script>
-  <script src="./assets/js/modal.js" defer></script>
+    <title>Экосистема российского вендора</title>
+  </head>
 
-  <title>Экосистема российского вендора</title>
-</head>
-
-<body>
-  <header class="header container">
-    <div class="header__content content">
-      <nav class="header__menu">
-        <a href="#keytopics" class="header__link">Ключевые темы</a>
-        <a href="#speakers" class="header__link">Спикеры</a>
-        <a href="#registration" class="header__link before-lg" >Регистрация</a>
-      </nav>
-      <div class="header__item">
-        <div class="logo">
-          <img class="logo__img" src="./assets/images/logo.svg" alt="XCOM" />
-          <img class="logo__img" src="./assets/images/logo-nextouch.svg" alt="КИБЕР ПРОЕКТ" />
-        </div>
-      </div>
-      <a href="#registration" class="offer__button button after-lg">
-        <span class="button__text">Принять участие</span>
-      </a>
-      <div class="header__item before-lg">
-        <div class="header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-
-    </div>
-  </header>
-  <main>
-    <section class="offer container">
-      <div class="content offer__content">
-        <h1 class="offer__headline headline headline--light offer__headline hyphenate">Ne<div class="second-font">x
-          </div>Tou<div class="second-font">c</div>h</h1>
-
-        <div class="offer__headline">
-          <div class="second-font">2026</div> <img class="offer__cursor" src="assets/images/cursor.png" alt="">
-        </div>
-
-        <div class="date">
-          <div class="date__item">
-            <div class="date__headline second-font">9 апреля</div>
-            Экосистема российского вендора
-            Как адаптироваться к законам
-            и сохранить маржу?
-          </div>
-          <div class="date__item">
-            <a class="offer__button button" style="pointer-events: none;">
-              <span class="button__text">11:00 [четверг]</span>
-            </a>
-            <a href="#registration" class="offer__button button before-lg" style="margin-top: var(--size-xxs)">
-              <span class="button__text">Принять участие</span>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <a id="keytopics"></a>
-    <section class="container">
-      <div class="content list list--mobile">
-        <div class="headgroup__label">О чем будем говориить на вебинаре</div>
-        <div class="list__content list__content--row" style="gap: var(--size-sm)">
-          <div class="list__header" style="flex-basis: auto">
-            <div class="headgroup">
-              <img src="assets/images/double-arrow.svg" style="max-width: 10vw" alt="" />
-
-            </div>
-          </div>
-          <div class="list__items" style="flex-basis: 100%">
-            <div class="list__item list__item--thin line-bottom">
-              Технологическая независимость
-              как основа стабильности в условиях меняющегося рынка
-            </div>
-            <div class="list__item list__item--thin line-bottom">
-              Партнёрство, измеряемое результатом: поддержка и экспертиза на каждом этапе реализации проекта
-            </div>
-            <div class="list__item list__item--thin line-bottom">
-              Перспективы отрасли: соответствие регуляторным трендам и вызовам
-            </div>
+  <body>
+    <header class="header container">
+      <div class="header__content content">
+        <nav class="header__menu">
+          <a href="#keytopics" class="header__link">Ключевые темы</a>
+          <a href="#speakers" class="header__link">Спикеры</a>
+          <a href="#registration" class="header__link before-lg">Регистрация</a>
+        </nav>
+        <div class="header__item">
+          <div class="logo">
+            <img class="logo__img" src="./assets/images/logo.svg" alt="XCOM" />
+            <img class="logo__img" src="./assets/images/logo-nextouch.svg" alt="КИБЕР ПРОЕКТ" />
           </div>
         </div>
-      </div>
-    </section>
-    
-
- <a id="speakers"></a>
-    <section class="container" style="padding-bottom: var(--size-sm)">
-      <div class="headgroup content">
-        <div class="headgroup__label">Спикеры</div>
-      </div>
-    </section>
-   
-    <section class="speakers container" style="padding-block: 0;">
-      <div class="speakers__content content">
-
-
-        <div class="swiper speakers__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide speakers__slide">
-              <img class="speakers__image" src="assets/images/speaker-1.png" alt="" />
-              <div class="speacers__block">
-                <div class="headline">Егор Горбунов</div>
-                <div class="speakers__text">Руководитель департамента корпоративных продаж</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <img class="background" src="assets" alt="" /> -->
-
-    <a id="registration"></a>
-    <section class="container">
-      <div class="content">
-        <form class="form" id="main-form" action="#">
-          <div class="headgroup">
-            <div class="headgroup__label margin-bottom-xl">Регистрация</div>
-          </div>
-          <div class="form__wrapper">
-            <div class="form__inputs">
-              <div class="form__item">
-                <label for="name" class="form__label">Имя</label>
-                <input type="text" class="form__input" placeholder="" name="name" required />
-                <div class="error-message" style="display: none"></div>
-              </div>
-              <div class="form__item">
-                <label for="surname" class="form__label">Фамилия</label>
-                <input type="text" class="form__input" placeholder="" name="surname" required />
-                <div class="error-message" style="display: none"></div>
-              </div>
-              <div class="form__item">
-                <label for="email" class="form__label">Почта</label>
-                <input type="email" class="form__input" placeholder="" name="email" required />
-                <div class="error-message" style="display: none"></div>
-              </div>
-              <div class="form__item">
-                <label for="phone" class="form__label">Телефон</label>
-                <input type="tel" class="form__input" placeholder="" name="phone" required />
-                <div class="error-message" style="display: none"></div>
-              </div>
-              <div class="form__item">
-                <label for="company" class="form__label">Название организации</label>
-                <input type="text" class="form__input" placeholder="" name="company" />
-                <div class="error-message" style="display: none"></div>
-              </div>
-              <div class="form__item">
-                <label for="job" class="form__label">Должность</label>
-                <input type="text" class="form__input" placeholder="" name="position" />
-                <div class="error-message" style="display: none"></div>
-              </div>
-              <div class="form__item">
-                <label for="taxId" class="form__label">ИНН</label>
-                <input type="number" class="form__input" placeholder="" name="taxId" />
-                <div class="error-message" style="display: none"></div>
-              </div>
-            </div>
-            <div class="form__item form__item--checkbox">
-              <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox" required />
-              <label for="privacy-policy" class="form__checkbox-label">Я согласен на обработку <a href="#"
-                  style="font-weight: 700">персональных данных</a></label>
-              <div class="error-message" style="display: none"></div>
-            </div>
-            <button type="submit" class="form__button button">
-              <span class="button__text">Принять участие</span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="footer container">
-    <div class="footer__content padding-bottom-xl padding-top-xl content">
-      <div class="footer__item">
-        <a href="https://www.xcom.ru/" class="logo">
-          <img class="footer__logo-img" src="./assets/images/logo.svg" alt="XCOM" />
+        <a href="#registration" class="offer__button button after-lg">
+          <span class="button__text">Принять участие</span>
         </a>
-      </div>
-      <div class="footer__item">
-        <div class="group group--mobile">
-          <div class="text text--start text--full">
-            <span class="text-base text-base--normal">Контакты</span>
-            <a href="tel:+74952236339">+7 (495) 223-63-39 (Москва)</a>
-            <a href="tel:+78127401120">+7 (812) 740-11-20 (Санкт-Петербург)</a>
+        <div class="header__item before-lg">
+          <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div class="text text--start text--full">
-            <span class="text-base text-base--normal">Обратная связь</span>
-            <a href="mailto:om@xcom.ru">Электронная почта: om@xcom.ru</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="offer container">
+        <div class="content offer__content">
+          <div class="offer__group">
+            <h1 class="offer__headline headline headline--light offer__headline hyphenate">
+              Ne
+              <div class="second-font">x</div>
+              Tou
+              <div class="second-font">c</div>
+              h
+            </h1>
 
-            <div class="group">
-              <a href="#"><img src="./assets/images/tg.svg" alt="" /></a>
-              <a href="#"><img src="./assets/images/vk.svg" alt="" /></a>
-              <a href="#"><img src="./assets/images/mail.svg" alt="" /></a>
+            <div class="offer__headline">
+              <div class="second-font">2026</div>
+              <img class="offer__cursor" src="assets/images/cursor.png" alt="" />
             </div>
           </div>
-          <div class="text text--start text--full text--max-width">
-            <a href="#" class="link">Политика конфиденциальности</a>
+
+          <div class="date">
+            <div class="date__item">
+              <div class="date__headline second-font">9 апреля</div>
+              Экосистема российского вендора Как адаптироваться к законам и сохранить маржу?
+            </div>
+            <div class="date__item">
+              <a class="offer__button button" style="pointer-events: none">
+                <span class="button__text">11:00 [четверг]</span>
+              </a>
+              <a href="#registration" class="offer__button button before-lg" style="margin-top: var(--size-xxs)">
+                <span class="button__text">Принять участие</span>
+              </a>
+            </div>
           </div>
-          <div class="text text--start text--full text--max-width" style="margin-top: 20vh">
-            Использование материалов, размещенных на сайте, допускается только с письменного разрешения «ООО М-ИНВЕСТ»
+        </div>
+      </section>
+
+      <a id="keytopics"></a>
+      <section class="container">
+        <div class="content list list--mobile">
+          <div class="headgroup__label">О чем будем говориить на вебинаре</div>
+          <div class="list__content list__content--row" style="gap: var(--size-sm)">
+            <div class="list__header" style="flex-basis: auto">
+              <div class="headgroup">
+                <img src="assets/images/double-arrow.svg" style="max-width: 10vw" alt="" />
+              </div>
+            </div>
+            <div class="list__items" style="flex-basis: 100%">
+              <div class="list__item list__item--thin line-bottom">Технологическая независимость как основа стабильности в условиях меняющегося рынка</div>
+              <div class="list__item list__item--thin line-bottom">Партнёрство, измеряемое результатом: поддержка и экспертиза на каждом этапе реализации проекта</div>
+              <div class="list__item list__item--thin line-bottom">Перспективы отрасли: соответствие регуляторным трендам и вызовам</div>
+            </div>
           </div>
-          <div class="text text--start text--full text--max-width">2026 © «ООО М-ИНВЕСТ». Все права защищены.</div>
+        </div>
+      </section>
+
+      <a id="speakers"></a>
+      <section class="container" style="padding-bottom: var(--size-sm)">
+        <div class="headgroup content">
+          <div class="headgroup__label">Спикеры</div>
+        </div>
+      </section>
+
+      <section class="speakers container" style="padding-block: 0">
+        <div class="speakers__content content">
+          <div class="swiper speakers__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide speakers__slide">
+                <img class="speakers__image" src="assets/images/speaker-1.png" alt="" />
+                <div class="speacers__block">
+                  <div class="headline">Егор Горбунов</div>
+                  <div class="speakers__text">Руководитель департамента корпоративных продаж</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <img class="background" src="assets" alt="" /> -->
+
+      <a id="registration"></a>
+      <section class="container">
+        <div class="content">
+          <form class="form" id="main-form" action="#">
+            <div class="headgroup">
+              <div class="headgroup__label margin-bottom-xl">Регистрация</div>
+            </div>
+            <div class="form__wrapper">
+              <div class="form__inputs">
+                <div class="form__item">
+                  <label for="name" class="form__label">Имя</label>
+                  <input type="text" class="form__input" placeholder="" name="name" required />
+                  <div class="error-message" style="display: none"></div>
+                </div>
+                <div class="form__item">
+                  <label for="surname" class="form__label">Фамилия</label>
+                  <input type="text" class="form__input" placeholder="" name="surname" required />
+                  <div class="error-message" style="display: none"></div>
+                </div>
+                <div class="form__item">
+                  <label for="email" class="form__label">Почта</label>
+                  <input type="email" class="form__input" placeholder="" name="email" required />
+                  <div class="error-message" style="display: none"></div>
+                </div>
+                <div class="form__item">
+                  <label for="phone" class="form__label">Телефон</label>
+                  <input type="tel" class="form__input" placeholder="" name="phone" required />
+                  <div class="error-message" style="display: none"></div>
+                </div>
+                <div class="form__item">
+                  <label for="company" class="form__label">Название организации</label>
+                  <input type="text" class="form__input" placeholder="" name="company" />
+                  <div class="error-message" style="display: none"></div>
+                </div>
+                <div class="form__item">
+                  <label for="job" class="form__label">Должность</label>
+                  <input type="text" class="form__input" placeholder="" name="position" />
+                  <div class="error-message" style="display: none"></div>
+                </div>
+                <div class="form__item">
+                  <label for="taxId" class="form__label">ИНН</label>
+                  <input type="number" class="form__input" placeholder="" name="taxId" />
+                  <div class="error-message" style="display: none"></div>
+                </div>
+              </div>
+              <div class="form__item form__item--checkbox">
+                <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox" required />
+                <label for="privacy-policy" class="form__checkbox-label">Я согласен на обработку <a href="#" style="font-weight: 700">персональных данных</a></label>
+                <div class="error-message" style="display: none"></div>
+              </div>
+              <button type="submit" class="form__button button">
+                <span class="button__text">Принять участие</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer__content padding-bottom-xl padding-top-xl content">
+        <div class="footer__item">
+          <a href="https://www.xcom.ru/" class="logo">
+            <img class="footer__logo-img" src="./assets/images/logo.svg" alt="XCOM" />
+          </a>
+        </div>
+        <div class="footer__item">
+          <div class="group group--mobile">
+            <div class="text text--start text--full">
+              <span class="text-base text-base--normal">Контакты</span>
+              <a href="tel:+74952236339">+7 (495) 223-63-39 (Москва)</a>
+              <a href="tel:+78127401120">+7 (812) 740-11-20 (Санкт-Петербург)</a>
+            </div>
+            <div class="text text--start text--full">
+              <span class="text-base text-base--normal">Обратная связь</span>
+              <a href="mailto:om@xcom.ru">Электронная почта: om@xcom.ru</a>
+
+              <div class="group">
+                <a href="#"><img src="./assets/images/tg.svg" alt="" /></a>
+                <a href="#"><img src="./assets/images/vk.svg" alt="" /></a>
+                <a href="#"><img src="./assets/images/mail.svg" alt="" /></a>
+              </div>
+            </div>
+            <div class="text text--start text--full text--max-width">
+              <a href="#" class="link">Политика конфиденциальности</a>
+            </div>
+            <div class="text text--start text--full text--max-width" style="margin-top: 20vh">
+              Использование материалов, размещенных на сайте, допускается только с письменного разрешения «ООО М-ИНВЕСТ»
+            </div>
+            <div class="text text--start text--full text--max-width">2026 © «ООО М-ИНВЕСТ». Все права защищены.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal animate__animated" style="display: none">
+      <div class="modal__window animate__animated">
+        <div class="modal__close">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="modal__content">
+          <p class="modal__headline"></p>
+          <p class="modal__text"></p>
+          <a class="modal__button button button--color"> </a>
         </div>
       </div>
     </div>
-  </footer>
-  <div class="modal animate__animated" style="display: none">
-    <div class="modal__window animate__animated">
-      <div class="modal__close">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="modal__content">
-        <p class="modal__headline"></p>
-        <p class="modal__text"></p>
-        <a class="modal__button button button--color"> </a>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 
-<script src="./assets/js/slider.js"></script>
-<script src="./assets/js/cellBackground.js"></script>
-
+  <script src="./assets/js/slider.js"></script>
+  <script src="./assets/js/cellBackground.js"></script>
 </html>
